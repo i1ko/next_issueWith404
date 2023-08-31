@@ -1,0 +1,27 @@
+@import 'slice.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*RESET START*/
+@layer base {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white !important;
+        caret-color: white;
+    }
+}
+/*RESET END*/
+
+/*reCAPTCHA badge hiding starts here*/
+.grecaptcha-badge {
+    visibility: hidden;
+}
+/*reCAPTCHA badge hiding ends here*/
